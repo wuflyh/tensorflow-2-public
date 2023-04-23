@@ -42,7 +42,7 @@ async function train() {
   // Compile the model using the categoricalCrossentropy loss, and
   // the optimizer you defined above.
   // YOUR CODE HERE
-  model.compile(optimizer: optimizer, loss: 'categoricalCrossentropy');
+  model.compile({optimizer: optimizer, loss: 'categoricalCrossentropy'});
  
   let loss = 0;
   model.fit(dataset.xs, dataset.ys, {
